@@ -1,0 +1,54 @@
+<script>
+a = 4 
+b = 2 
+if(a>b){
+    console.log("Numarul a este mai mare decat b.");
+}
+else if (a<b){
+    console.log("Nu indeplineste conditia.")
+}
+
+masini=["bmw", "dacia", "mercedes", "lancia"]
+for(i=0; i<4;i++){
+    console.log("Masina cu numarul " + i + " este " + masini[i]);
+
+}
+
+
+
+function inmultire(a,b)
+{
+    console.log("Produsul numerelor " + a + " si " + b + " este " + a*b)
+}
+inmultire (2,5)
+
+
+function salut (nume,sex){
+    let s 
+    if (sex="Masculin"){
+        s=" domnule "; 
+    }
+    else{
+       s=" doamna ";
+    
+
+    }
+
+    console.log("Salut " + s + nume);
+
+
+}
+
+salut ("Radu", "Masculin")
+salut ("Ioana", "Feminin")
+
+function afisareMasini([x]){
+    for(i=0;i<4;i++){
+    console.log(i[x]);}
+
+  
+
+afisareMasini(["1","2","3","4","5"]);
+}
+
+</script>
