@@ -10,17 +10,17 @@ else if (a<b){
 
 masini=["bmw", "dacia", "mercedes", "lancia"]
 for(i=0; i<4;i++){
-    console.log("Masina cu numarul " + i + " este " + masini[i]);
+    console.log("Masina cu numarul " + (i+1) + " este " + masini[i]);
 
 }
 
 
 
-function inmultire(a,b)
-{
-    console.log("Produsul numerelor " + a + " si " + b + " este " + a*b)
+function inmultire(a,b){
+    console.log("Produsul numerelor " + a + " si " + b + " este " + a*b);
 }
 inmultire (2,5)
+
 
 
 function salut (nume,sex){
@@ -42,13 +42,21 @@ function salut (nume,sex){
 salut ("Radu", "Masculin")
 salut ("Ioana", "Feminin")
 
-function afisareMasini([x]){
-    for(i=0;i<4;i++){
-    console.log(i[x]);}
-
-  
-
-afisareMasini(["1","2","3","4","5"]);
+function afiseazaInvers (x){
+    for(i=0-1;i<4;i--){
+    console.log(i[x-1])
+    }
 }
+//afiseazaInvers(["1","2","3","4","5"]);
+
+
+ 
+
+inmultire = (c,d) =>{
+    console.log("Produsul este: " + c*d); 
+} 
+c=3
+d=5
+
 
 </script>
